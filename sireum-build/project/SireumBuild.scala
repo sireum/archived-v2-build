@@ -53,7 +53,7 @@ object SireumBuild extends Build {
       ) settings (
           name := "Sireum")
 
-  final val scalaVer = "2.11.2"
+  final val scalaVer = "2.11.5"
 
   val sireumSettings = Seq(
     organization := "SAnToS Laboratory",
