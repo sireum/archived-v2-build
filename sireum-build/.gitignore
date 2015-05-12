@@ -3,7 +3,7 @@
 /temp
 /update
 /sbt
-/.cache
+/.cache*
 /.scala_dependencies
 /sireum-*
 /bakar
