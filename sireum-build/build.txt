@@ -3,9 +3,7 @@ How To Build Sireum Core using the Simple Build Tool (SBT)
 
 Requirement: Java 7 or above
 
-1. Run setup.sh
-
-3. Run sbt:
+1. Run sbt:
 
    tools/bin/sbt
 

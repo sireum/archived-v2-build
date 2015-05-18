@@ -164,7 +164,7 @@ object SireumBuild extends Build {
   val serverPI = new ProjectInfo("Sireum Server", CLIENT_SERVER_DIR, Seq(),
     libPI, utilPI, optionPI)
   val projectPI = new ProjectInfo("Sireum Project", CLIENT_SERVER_DIR, Seq(),
-    libPI)
+    libPI, utilPI, optionPI, serverPI)
   val coreTestPI = new ProjectInfo("Sireum Core Test", CORE_DIR, Seq(),
     libPI, utilPI, pilarPI, alirPI, konkritPI, topiPI, kiasanPI,
     optionPI, pipelinePI, cliPI, modulePI, extCompositePI, extCompositeValuePI)
