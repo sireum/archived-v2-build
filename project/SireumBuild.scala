@@ -26,13 +26,13 @@ import java.io.StringWriter
 
 object SireumBuild extends Build {
   final val BUILD_FILENAME = "BUILD"
-  final val PRELUDE_DIR = "codebase/prelude/"
-  final val CORE_DIR = "codebase/core/"
-  final val BAKAR_DIR = "codebase/bakar/"
-  final val PARSER_DIR = "codebase/parser/"
-  final val CLIENT_SERVER_DIR = "codebase/client-server/"
-  final val JAWA_DIR = "codebase/jawa/"
-  final val AMANDROID_DIR = "codebase/amandroid/"
+  final val PRELUDE_DIR = "prelude/"
+  final val CORE_DIR = "core/"
+  final val BAKAR_DIR = "bakar/"
+  final val PARSER_DIR = "parser/"
+  final val CLIENT_SERVER_DIR = "client-server/"
+  final val JAWA_DIR = "jawa/"
+  final val AMANDROID_DIR = "amandroid/"
 
   import ProjectInfo._
 

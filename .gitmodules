@@ -1,28 +1,28 @@
 [submodule "sireum-build/codebase/prelude"]
-	path = codebase/prelude
+	path = prelude
 	url = https://github.com/sireum/prelude.git
 	branch = master
 [submodule "sireum-build/codebase/core"]
-	path = codebase/core
+	path = core
 	url = https://github.com/sireum/core.git
 	branch = master
 [submodule "sireum-build/codebase/parser"]
-	path = codebase/parser
+	path = parser
 	url = https://github.com/sireum/parser.git
 	branch = master
 [submodule "sireum-build/codebase/bakar"]
-	path = codebase/bakar
+	path = bakar
 	url = https://github.com/sireum/bakar
 	branch = master
 [submodule "sireum-build/codebase/client-server"]
-	path = codebase/client-server
+	path = client-server
 	url = https://github.com/sireum/client-server
 	branch = master
 [submodule "sireum-build/codebase/jawa"]
-	path = codebase/jawa
+	path = jawa
 	url = https://github.com/sireum/jawa
 	branch = master
 [submodule "sireum-build/codebase/amandroid"]
-	path = codebase/amandroid
+	path = amandroid
 	url = https://github.com/sireum/amandroid
 	branch = master
