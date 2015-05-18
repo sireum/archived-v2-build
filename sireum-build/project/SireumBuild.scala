@@ -71,7 +71,7 @@ object SireumBuild extends Build {
     scalacOptions ++= Seq("-target:jvm-1.7"),
     libraryDependencies += "org.scala-lang" % "scala-reflect" % scalaVer,
     libraryDependencies += "org.scala-lang" % "scala-compiler" % scalaVer,
-    libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4" % "test",
+    libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.5" % "test",
     testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-oD")
   )
 
