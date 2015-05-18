@@ -1,12 +1,20 @@
-Building Sireum
-===============
+Requirements
+============
 
-**Requirement: Java 8**
+* [Sireum](http://sireum.org) with Gnat and Z3 features installed:
 
-1. Run sbt: `tools/bin/sbt`
+  `sireum install Gnat Z3`
 
-See [sbt's documentation](http://www.scala-sbt.org/release/docs/index.html) for
-more information on how to build and test Sireum.
+
+Building and Testing Sireum using Sbt
+=====================================
+
+1. Set `SIREUM_HOME` to point to Sireum's installation directory.
+
+2. Add `SIREUM_HOME/apps/platform/java/bin` to the beginning of the 
+   `PATH` environment variable. 
+
+3. Run: `tools/bin/sbt test`
 
 
 Eclipse
