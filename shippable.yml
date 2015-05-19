@@ -1,0 +1,4 @@
+build_image: sireum/build
+
+script:
+  - tools/bin/sbt clean compile test:compile
