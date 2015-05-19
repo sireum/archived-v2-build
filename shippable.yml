@@ -1,4 +1,4 @@
-build_image: shippableImages/ubuntu1404_java
+language: java
 
 jdk:
   - oraclejdk8
