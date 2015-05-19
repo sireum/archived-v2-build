@@ -1,3 +1,5 @@
+[![Build Status](https://api.shippable.com/projects/55534a22edd7f2c052ebbc87/badge?branchName=master)](https://app.shippable.com/projects/55534a22edd7f2c052ebbc87/builds/latest) 
+
 Requirements
 ============
 
