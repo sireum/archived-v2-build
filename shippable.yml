@@ -8,3 +8,8 @@ jdk:
 script:
   - ./setup.sh
   - tools/bin/sbt clean compile test:compile
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
