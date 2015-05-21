@@ -1,6 +1,6 @@
 cache: true
 
-language: java
+language: scala
 
 jdk:
   - oraclejdk8
