@@ -11,12 +11,15 @@ Requirements
 Building and Testing Sireum using Sbt
 =====================================
 
-1. Set `SIREUM_HOME` to point to Sireum's installation directory.
+1. Set the `SIREUM_HOME` environment variable to point to Sireum's
+   installation directory.
 
 2. Add `SIREUM_HOME/apps/platform/java/bin` to the beginning of the 
    `PATH` environment variable. 
 
-3. Run: `tools/bin/sbt test`
+3. Run: `./setup.sh`
+
+4. Run: `tools/bin/sbt test`
 
 
 Eclipse
