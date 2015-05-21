@@ -5,7 +5,7 @@ for i in "${ips[@]}"; do
     echo "Pulling ${i}"
     cd ${i}
     git pull --depth 1
-    cd ../..
+    cd ..
   else
     echo "Cloning ${i}"
     git clone --depth 1 https://github.com/sireum/${i}.git
