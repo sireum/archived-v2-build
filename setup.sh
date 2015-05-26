@@ -10,6 +10,8 @@ for i in "${ips[@]}"; do
   else
     echo "Cloning ${i}"
     git clone --depth 1 https://github.com/sireum/${i}.git
+    cd ${i}
     git show --name-only
+    cd ..
   fi
 done
