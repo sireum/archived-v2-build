@@ -5,6 +5,11 @@ language: java
 jdk:
   - oraclejdk8
 
+before_script:
+  - export JAVA_HOME="/usr/lib/jvm/java-8-oracle"; export PATH="$PATH:/usr/lib/jvm/java-8-oracle/bin"; export java_path="/usr/lib/jvm/java-8-oracle/jre/bin/java"
+  - update-alternatives --set java $java_path
+  - java -version
+  
 script:
   - java -version
   - ./setup.sh
