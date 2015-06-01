@@ -6,6 +6,7 @@ jdk:
   - oraclejdk8
 
 script:
+  - java -version
   - ./setup.sh
   - export SBT_OPTS="-Xmx2G -Xms512m -XX:+UseG1GC"
   - sbt clean compile test:compile
