@@ -17,7 +17,7 @@ Building and Testing Sireum using Sbt
 2. Add `SIREUM_HOME/apps/platform/java/bin` and `SIREUM_HOME/apps/sbt/bin`
    to the beginning of the `PATH` environment variable. 
 
-3. Run: `./setup.sh`
+3. Run: `./setup.sh` (or `./setup-shallow.sh` for shallow cloning version)
 
 4. Run: `sbt test`
 
