@@ -14,4 +14,5 @@ for i in "${ips[@]}"; do
     git --no-pager show --name-only
     cd ..
   fi
+  echo ""
 done

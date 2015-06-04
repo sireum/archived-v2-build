@@ -10,4 +10,5 @@ for i in "${ips[@]}"; do
     echo "Cloning ${i}"
     git clone --depth 1 https://github.com/sireum/${i}.git
   fi
+  echo ""
 done
