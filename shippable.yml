@@ -11,7 +11,7 @@ before_script:
   - java -version
   
 script:
-  - ./setup.sh
+  - ./setup-build.sh
   - export SBT_OPTS="-Xmx2G -Xms512m -XX:+UseG1GC"
   - sbt clean compile test:compile
 

@@ -17,13 +17,16 @@ Building and Testing Sireum using Sbt
 2. Add `SIREUM_HOME/apps/platform/java/bin` and `SIREUM_HOME/apps/sbt/bin`
    to the beginning of the `PATH` environment variable. 
 
-3. Run: `./setup.sh` (or `./setup-shallow.sh` for shallow cloning version)
+3. Run: `./setup.sh`
 
-4. Run: `sbt test`
+4. Run: `./sbt-launch.sh test`
 
 
 Eclipse
 =======
 
+After running `./setup.sh`, import all nested Eclipse projects into your
+workspace.
+
 To resolve sireum-build Eclipse project dependency, 
-run `sbt -ivy sbt/sbtivy -sbt-boot sbt/boot` at least once.
+run `SBT_DIR=sbt ./sbt-launch.sh compile` at least once.
