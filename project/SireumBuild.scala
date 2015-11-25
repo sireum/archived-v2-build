@@ -48,8 +48,8 @@ object SireumBuild extends Build {
         option, pipeline, cli, tools, module, server, project,
         coreTest,
         bakarXml, bakarJago, bakarTools, bakarCompiler, bakarTest,
-        jawa, jawaAlir, jawaTest,
-        amandroid, amandroidAlir, amandroidSecurity, amandroidCli, amandroidTest
+        jawa, jawaCompiler, jawaAlir, jawaTest,
+        amandroidDedex, amandroid, amandroidAlir, amandroidSecurity, amandroidCli, amandroidTest
       ) settings (
           name := "Sireum")
 
@@ -101,8 +101,10 @@ object SireumBuild extends Build {
   lazy val bakarTools = toSbtProject(bakarToolsPI)
   lazy val bakarTest = toSbtProject(bakarTestPI)
   lazy val jawa = toSbtProject(jawaPI)
+  lazy val jawaCompiler = toSbtProject(jawaCompilerPI)
   lazy val jawaAlir = toSbtProject(jawaAlirPI)
   lazy val jawaTest = toSbtProject(jawaTestPI)
+  lazy val amandroidDedex = toSbtProject(amandroidDedexPI)
   lazy val amandroid = toSbtProject(amandroidPI)
   lazy val amandroidAlir = toSbtProject(amandroidAlirPI)
   lazy val amandroidSecurity = toSbtProject(amandroidSecurityPI)
@@ -186,26 +188,32 @@ object SireumBuild extends Build {
   val jawaPI = new ProjectInfo("Sireum Jawa",
     JAWA_DIR, Seq(),
     libPI, utilPI, pilarPI, parserPI)
+  val jawaCompilerPI = new ProjectInfo("Sireum Jawa Compiler",
+    JAWA_DIR, Seq(),
+    libPI, utilPI, pilarPI, parserPI, alirPI, jawaPI)
   val jawaAlirPI = new ProjectInfo("Sireum Jawa Alir",
     JAWA_DIR, Seq(),
     libPI, utilPI, pilarPI, parserPI, alirPI, jawaPI)
   val jawaTestPI = new ProjectInfo("Sireum Jawa Test",
     JAWA_DIR, Seq(),
-    libPI, utilPI, pilarPI, parserPI, alirPI, jawaPI, jawaAlirPI)
+    libPI, utilPI, pilarPI, parserPI, alirPI, jawaPI, jawaCompilerPI, jawaAlirPI)
+  val amandroidDedexPI = new ProjectInfo("Sireum Amandroid Dedex",
+    AMANDROID_DIR, Seq("Amandroid"),
+    libPI, utilPI, jawaPI)
   val amandroidPI = new ProjectInfo("Sireum Amandroid",
     AMANDROID_DIR, Seq("Amandroid"),
-    libPI, utilPI, pilarPI, parserPI, alirPI, optionPI, jawaPI, jawaAlirPI)
+    libPI, utilPI, pilarPI, parserPI, alirPI, optionPI, jawaPI, jawaCompilerPI, jawaAlirPI, amandroidDedexPI)
   val amandroidAlirPI = new ProjectInfo("Sireum Amandroid Alir",
     AMANDROID_DIR, Seq("Amandroid"),
-    libPI, utilPI, pilarPI, parserPI, alirPI, optionPI, jawaPI, jawaAlirPI, amandroidPI)
+    libPI, utilPI, pilarPI, parserPI, alirPI, optionPI, jawaPI, jawaCompilerPI, jawaAlirPI, amandroidDedexPI, amandroidPI)
   val amandroidSecurityPI = new ProjectInfo("Sireum Amandroid Security",
     AMANDROID_DIR, Seq("Amandroid"),
-    libPI, utilPI, pilarPI, parserPI, alirPI, optionPI, jawaPI, jawaAlirPI, amandroidPI, amandroidAlirPI)
+    libPI, utilPI, pilarPI, parserPI, alirPI, optionPI, jawaPI, jawaCompilerPI, jawaAlirPI, amandroidDedexPI, amandroidPI, amandroidAlirPI)
   val amandroidCliPI = new ProjectInfo("Sireum Amandroid Cli",
     AMANDROID_DIR, Seq("Amandroid"),
-    libPI, utilPI, pilarPI, parserPI, alirPI, optionPI, jawaPI, jawaAlirPI, amandroidPI, amandroidAlirPI, amandroidSecurityPI)
+    libPI, utilPI, pilarPI, parserPI, alirPI, optionPI, jawaPI, jawaCompilerPI, jawaAlirPI, amandroidDedexPI, amandroidPI, amandroidAlirPI, amandroidSecurityPI)
   val amandroidTestPI = new ProjectInfo("Sireum Amandroid Test",
     AMANDROID_DIR, Seq("Amandroid"),
-    libPI, utilPI, pilarPI, parserPI, alirPI, optionPI, jawaPI, jawaAlirPI, amandroidPI,
+    libPI, utilPI, pilarPI, parserPI, alirPI, optionPI, jawaPI, jawaCompilerPI, jawaAlirPI, amandroidDedexPI, amandroidPI,
     amandroidAlirPI, amandroidSecurityPI, jawaTestPI)
 }
